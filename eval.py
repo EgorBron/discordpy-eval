@@ -7,7 +7,7 @@ bot = commands.Bot(command_prefix = commands.when_mentioned_or('!'), intents = d
 def minify_text(txt):
     if len(txt) >= 1024:
         return f'''{str(txt)[:-900]}...
-        # ...и ещё {len(str(txt).replace(str(txt)[:-900], ""))} символов...'''
+        ...и ещё {len(str(txt).replace(str(txt)[:-900], ""))} символов...'''
     else:
         return str(txt) # Захотелось использовать лямбду и всё в одну строку... но решил хоть как-то сделать читабельней
 
