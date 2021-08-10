@@ -6,10 +6,10 @@ bot = commands.Bot(command_prefix = commands.when_mentioned_or('!'), intents = d
 
 def minify_text(txt):
     if len(txt) >= 1024:
-        return f'''{txt[:-900]}...
-        # ...и ещё {len(txt.replace(txt[:-900], ""))} символов...'''
+        return f'''{str(txt)[:-900]}...
+        # ...и ещё {len(str(txt).replace(str(txt)[:-900], ""))} символов...'''
     else:
-        return txt # Захотелось использовать лямбду и всё в одну строку... но решил хоть как-то сделать читабельней
+        return str(txt) # Захотелось использовать лямбду и всё в одну строку... но решил хоть как-то сделать читабельней
 
 @bot.command(aliases = ['eval', 'aeval', 'evaulate', 'выполнить', 'exec', 'execute'])
 async def __eval(ctx, *, content):
