@@ -32,10 +32,11 @@
 
 ### Установка
 Для начала откроем консоль и напишем:
-На Windows: ```batch
-
+На Windows:
+```batch
 pip install discord
-pip install aeval```
+pip install aeval
+```
 
 (можете добавить перед каждым 'pip' python -m)
 
