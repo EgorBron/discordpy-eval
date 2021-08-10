@@ -51,7 +51,7 @@ async def __eval(ctx, *, content):
         if not code.startswith('#nooutput'): # Аналогично коду выше
             code = minify_text(code)
             embed = discord.Embed(title = f"При выполнении возникла ошибка.\nВремя: {ended}", description = f'Ошибка:\n```py\n{e}```', color = 0xff0000)
-            embed.add_field(name = f'Входные данные:', value = f'`{code}`', inline=False)
+            embed.add_field(name = f'Входные данные:', value = f'`{minify_text(code)}`', inline=False)
             await ctx.send(embed = embed)
             raise e # Ну и поднимем исключение
 bot.run('Токен бота из приложения на "discord.com/developers/applications". P. S. Не забудьте включить два параметра после заголовка Priveleged Gateway Intents')
