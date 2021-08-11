@@ -40,9 +40,8 @@
 ```batch
 pip install discord
 pip install aeval
+:: (можете добавить перед каждым 'pip' python -m)
 ```
-
-(можете добавить перед каждым 'pip' python -m)
 
 На Linux/Mac OS:
 ```bash
