@@ -35,6 +35,7 @@
 
 ### Установка
 Для начала откроем консоль и напишем:
+
 На Windows:
 ```batch
 pip install discord
