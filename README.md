@@ -1,3 +1,6 @@
+# deprecated code
+
+
 # Команда eval для discord.py
 
 ## Особенности:
